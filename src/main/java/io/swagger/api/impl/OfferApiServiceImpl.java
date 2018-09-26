@@ -5,7 +5,7 @@ import io.swagger.api.NotFoundException;
 import io.swagger.api.OfferApiService;
 import io.swagger.api.repository.IOfferRepository;
 import io.swagger.api.repository.impl.OfferRepository;
-import io.swagger.api.util.RateResourcesBundle;
+import io.swagger.api.util.ApiResourcesBundle;
 import io.swagger.model.Offer;
 
 import javax.ws.rs.core.Response;
@@ -13,8 +13,8 @@ import javax.ws.rs.core.SecurityContext;
 
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaJerseyServerCodegen", date = "2018-09-24T13:09:22.776Z[GMT]")
 public class OfferApiServiceImpl extends OfferApiService {
-    public static final RateResourcesBundle rateResourcesBundle = new RateResourcesBundle();
-    public static final String API_KEY = rateResourcesBundle.getApiKey();
+    public static final ApiResourcesBundle API_RESOURCES_BUNDLE = new ApiResourcesBundle();
+    public static final String API_KEY = API_RESOURCES_BUNDLE.getApiKey();
 
     private IOfferRepository offerRepository = new OfferRepository();
 

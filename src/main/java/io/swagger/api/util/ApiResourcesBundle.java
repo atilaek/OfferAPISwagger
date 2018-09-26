@@ -7,18 +7,18 @@ import java.util.ResourceBundle;
  *
  * @author Atila Ekimci
  */
-public class RateResourcesBundle {
+public class ApiResourcesBundle {
     private final static String apikey = "api_key";
 
     private String bundleName;
     private ResourceBundle resourceBundle;
 
-    public RateResourcesBundle(final String bundleName) {
+    public ApiResourcesBundle(final String bundleName) {
         resourceBundle = ResourceBundle.getBundle(bundleName);
     }
 
     @SuppressWarnings("unused")
-    public RateResourcesBundle() {
+    public ApiResourcesBundle() {
         resourceBundle = ResourceBundle.getBundle("apiResources");
     }
 
